@@ -1,0 +1,112 @@
+create a new repository on the command line
+
+echo "# Fisrt1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/AnuroopPonakala/Fisrt1.git
+git push -u origin main
+
+
+push an existing repository from the command line
+
+git remote add origin https://github.com/AnuroopPonakala/Fisrt1.git
+git branch -M main
+git push -u origin main
+
+
+Git personal access tocken
+
+5f851f08ad09b797f24862622b2f6b270fbcfcf7
+
+25th Feb'2021
+
+I have learned
+
+18th Feb 2021
+
+github.com/join/get-started
+
+git config --list - it will displays the all configured varibles
+
+--global - .gitconfig - user related data -  use global config file
+--system - system users data - use system config file
+--local - project related repojetry data - use repository config file
+
+git config --global -e -- editing
+
+git config --global user.name "AnuroopPonakala"
+git config --global user.email "anuroop.ponakala@gmail.com"
+
+git help <command> - for knowing details
+git <command> --help
+man git -<command>
+
+Notepad++ configuration
+
+Notepad++ Anuroop - it will create file
+
+notepad++ .bash_profile
+alis Npp="notepad++.exe -multiinst -nosession"
+
+*For macking default editers "core.editor"
+
+git config --global --list
+git config --global -e
+git config --global core.editor "notepad++.exe -multiinst -nosessions"
+
+Terms
+
+Commit - it show the commited detials
+clone - like copy
+tracked/untracked files - it tracks the every thing ".git(folder)"
+branch
+
+Master
+origin
+
+Git work flow
+
+1 Local
+	i	Working directory
+add
+	ii	Staging area or index area
+commit
+	iii	Repository .git folder
+push
+	iv	Remote git hub
+
+git clone <url>
+git close <url> <prefered name>
+git status
+
+local to remote repositery(GitHub)
+
+git init - Creating .git file in folder
+git add files - adding files to Stageing for unstageing : git rm --cached files
+git commit
+git remote add origin <git repository folder>
+git push origin main
+
+Life cycle
+
+untracked & tracked files
+
+untracked files - Untracked files
+tracked files - Unmodified , modified , staged
+
+git status --shot or git status -s
+??-Untracked
+A-Staging area
+M-Modified files
+
+for hiding files use .gitignore
+
+examples
+
+/test.txt - it ignores current directory files
+*.js - it ignores all js files
+!Anu.js - it allows only Anu.js file
+Anu.pem - it ignores all Anu.pem files in all directorys
+
